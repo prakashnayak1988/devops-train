@@ -11,6 +11,7 @@ docker container ls -a
 docker commit container ID custom-image
 docker image ls
 
+git clone https://github.com/arjunachari12/docker-demo-with-simple-python-app.git 
 #Docker build command
 docker build -t my-python-app:1.0.0 .
 
