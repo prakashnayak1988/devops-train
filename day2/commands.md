@@ -15,7 +15,6 @@ git clone https://github.com/arjunachari12/docker-demo-with-simple-python-app.gi
 #Docker build command
 docker build -t my-python-app:1.0.0 .
 
-docker build -t my-python-app:1.0.0 .
 #Create docker registry in docker hub called as my-python-app, copy the registry name
 docker tag my-python-app:1.0.0 arjunachari12/my-python-app:1.0.0
 docker login
