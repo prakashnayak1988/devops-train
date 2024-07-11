@@ -6,7 +6,7 @@ python3 -V
 apt install nodejs
 nodejs -v
 exit
-docker ls -a
+docker container ls -a
 # COPY container ID and paste below
 docker commit container ID custom-image
 docker image ls
