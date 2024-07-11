@@ -32,5 +32,21 @@ docker network create --help
 docker container run -d --name new_nginx --network my_app_net nginx
 docker network inspect my_app_net
 
+==============================
+docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysql
+docker container inspect mysql
+docker volume ls
+docker volume inspect TAB COMPLETION
+docker volume create mysql-db
+docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql mysql
+
+Volume commands
+mkdir html
+#add index.html page under html folder
+#add some text as “Welcome to Bind mount”
+cd html
+docker container run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
+
+
 
 ```
